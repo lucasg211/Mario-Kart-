@@ -69,7 +69,7 @@ async function playRaceEngine(player1, player2){
         let totaTestSkill1 = 0
         let totaTestSkill2 = 0
 
-        if(block === "RETA"){
+        if(block === "RETA"){                                                         
             totaTestSkill1 = diceResult1 + player1.velocidade
             totaTestSkill2 = diceResult2 + player2.velocidade
             await roundResult(player1.NOME, "RETA", diceResult1,player1.velocidade)
@@ -147,7 +147,7 @@ async function finalResult(character1,character2) {
 (async function(){
     console.log(`\n🚦 A corrida entre ${player1.NOME} e ${player2.NOME} está prestes a começar...`)
 
-    await playRaceEngine(player1,player2)//O await é necessário para que o código seja executado em uma ordem correta
+    await playRaceEngine(player1,player2)//O await é necessário para que o código seja executado em uma ordem orreta
     await finalResult(player1,player2)
 
 
